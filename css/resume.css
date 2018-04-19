@@ -148,8 +148,6 @@ a:hover, a:focus, a:active {
 
 .portfolio {
   margin-bottom: -15px;
-  opacity: 1;
-  background-color: rgba(228, 208, 31, 0.9);
 }
 
 .portfolio .portfolio-item {
