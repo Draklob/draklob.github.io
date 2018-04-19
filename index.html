@@ -2,90 +2,74 @@
 layout: default
 ---
 
-
-  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-    <amp-img width="404" height="720" alt="Cover" layout="responsive" src="{{ site.baseurl }}{{ site.cover }}" media="(max-width: 415px)"></amp-img>
-    <amp-img height="720" alt="Cover" layout="fixed-height" src="{{ site.baseurl }}{{ site.cover }}" media="(min-width: 416px)"></amp-img>
-    <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-      <header class="p3">
-        <h1 class="ampstart-fullpage-hero-heading mb0 hanuman">
-          <span class="ampstart-fullpage-hero-heading-text title">
-            {{ site.title }}
-          </span>
-        </h1>
-        <h2 class="ampstart-fullpage-hero-heading mb0">
-          <span class="ampstart-fullpage-hero-heading-text description">
-            {{ site.description }}
-          </span>
-        </h2>
-    </header>
-    {% if site.cover %}
-    <footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
-    </footer>
-    {% else %}
-    <footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-read py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
-    </footer>
-    {% endif %}
-    </figcaption>
-  </figure>
-
-<main id="content" role="main" class="content">
-
-  <div class="cf frame">
-    {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
-          <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
-          </header>
-          <section class="post-excerpt" itemprop="description">
-            <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          </section>
-          <div class="post-meta">
-            {% for author in site.data.authors %}
-              {% if author[1].username == post.author %}
-                {% if author[1].assets %}<amp-img width="24" height="24" class="author-thumb" layout="responsive" src="{{ site.baseurl }}{{author[1].assets}}" alt="{{author[1].name}}"/></amp-img>{% endif %}
-                <a href="{{site.baseurl}}authors/#{{author[1].username}}">{{author[1].name}}</a>
-              {% endif %}
-            {% endfor %}
-
-            {% if post.tags.size > 0 %}
-                in
-                {% for tag in post.tags %}
-                    {% if forloop.index == post.tags.size %}
-                       <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>
-                    {% else %}
-                       <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-              <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
-          </div>
-        </div>
-      </article>
-    {% endfor %}
+<div id="home">
+  <h1>TAUSEEF <span class="text-primary">JAMADAR</span></h1>
+  <div class="subheading">100 Sterling Oaks Drive · Chico, CA 95928 · {{site.phone}} ·
+    <a href="mailto:{{site.email}}">{{site.email}}</a>
   </div>
+  <hr />
 
-  <nav class="pagination" role="navigation">
-    {% if paginator.next_page %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
-    {% else %}
-      <a class="newer-posts disabled">&larr; Older posts</a>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
-      {% else %}
-        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-      {% endif %}
-    {% else %}
-      <a class="older-posts disabled">Newer posts &rarr;</a>
-    {% endif %}
-  </nav>
-
-</main>
-
-{% include footer.html %}
+  <div class="content">
+    <div class="header-content">
+      <p class="header-content__message">
+        Learn, Practice, Implement, Repeat ...
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>
+          Hi, I'm Tauseef. I build and develop software and web applications. I am working as a Sr. Software Engineer at 
+          <a href="https://www.build.com" target="_blank">Build.com</a> on some amazing projects. I am currently based in California. When I am not at work, I am mostly freelancing
+          and learning about new technologies.
+        </p>
+        <p>
+          I have a diverse set of skills, ranging from frontned HTML + CSS + Javascript to backend Java, Nodejs, PHP.
+          I am passionate about making things that make a difference in our society.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+          <small>Learn more about me <a href="{{ site.url }}/about/">here</a>.</small>
+      </div>
+    </div>
+    <div class="row home-quick-links">
+      <div class="col-md-3 home-quick-links__link">
+        <a href="{{ site.url }}/projects">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4>Projects</h4>
+        </a>
+      </div>
+      <div class="col-md-3 home-quick-links__link">
+        <a href="{{ site.url }}/blogs">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4>Blogs</h4>
+        </a>
+      </div>
+      <div class="col-md-3 home-quick-links__link">
+        <a href="{{ site.url }}/about">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-street-view fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4>About Me</h4>
+        </a>
+      </div>
+      <div class="col-md-3 home-quick-links__link">
+          <a href="https://twitter.com/{{site.share.twitter_username}}" target="_blank">
+            <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4>Twitter</h4>
+          </a>
+      </div>
+    </div>
+  </div>
+</div><!-- end #home -->

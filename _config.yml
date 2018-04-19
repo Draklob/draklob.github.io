@@ -1,58 +1,59 @@
-# Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
-cover: assets/images/radhakrishna.jpg
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
-baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://github.com/Draklob/draklob.github.io" # the base hostname & protocol for your site
-paginate:	5 # The number of posts to show per page on your homepage
+title: Tauseef Jamadar
+description: Stuff that I come across and find interesting.
+author: Tauseef Jamadar
+email: tmjam.ahmed@gmail.com
+phone: (650) 576-5403
+github: https://github.com/tmjam
+about: I am a Software Engineer at <a href="https://www.build.com" target="_blank">Build.com</a> and a freelance developer. I love working on backend and frontend technologies.
+disqus_shortname: programming
+google_analytics: UA-31048387-6
+avatar_url: /static/img/me.jpg
 
-# Social
-facebook: facebook
-twitter: twitter
-github:  github
+enableTags: true
+tagarray: []
 
-#Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
 
+social:
+    - icon: fa-facebook
+      link: "https://www.facebook.com/tjamadar"
+    - icon: fa-twitter
+      link: "https://twitter.com/tmjam3011"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/tauseef-jamadar-5b577913/"
+    # - icon: fa-stack-exchange
+    #   link: "#"
+    - icon: fa-github
+      link: "https://github.com/tmjam"
 
-permalink: /:title
+share:
+  twitter_username: tmjam3011
+  # fb_appid: 1749788565247320
 
-
-# Google Analytics
-analytics_id: ""
-
-# Build settings
+urls:
+    - text: About Me
+      url: /about/
+    - text: Projects
+      url: /projects/
+    - text: Blogs
+      url: /blogs/
+    - text: XML Feed
+      url: /feed.xml
+# url: "http://localhost:4000"
+url: "https://draklob.github.io/"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/blogs/page/:num/"
 markdown: kramdown
-
-kramdown:
-  parse_block_html: true
-
-plugins:
+gems:
   - jekyll-paginate
+  - jekyll-gist
 
-
-# Settings for rake task
-safe: False
-lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
-branch: master #branch
-relative_source: ../hanuman/ #source directory
-destination: ../hanuman-pages/ #destination directory
-production_url:  https://samanyougarg.com/
-source_url:  https://github.com/samanyougarg/hanuman #source repository url
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
-theme: jekyll-theme-cayman
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
