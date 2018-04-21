@@ -20,16 +20,17 @@ h2{font-size:3.5rem}
         #sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
         #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}}
 
-section.resume-section{border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important}
+section.resume-section{border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important; }
 section.resume-section .resume-item .resume-date{min-width:none}
         
 @media (min-width:768px){
-    section.resume-section{min-height:35vh}
     
-    section.resume-section .resume-item .resume-date{min-width:18rem}}
+    section.resume-section{min-height:35vh; position: relative;}
+    
+    section.resume-section .resume-item .resume-date{min-width:18rem; position: relative;}}
     
 @media (min-width:992px){
-    section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}
+    section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important; position: relative;}}
     
 .portfolio{margin-bottom:-15px}
 .portfolio .portfolio-item{position:relative;display:block;max-width:25rem;margin-bottom:15px}
@@ -37,12 +38,41 @@ section.resume-section .resume-item .resume-date{min-width:none}
 .portfolio .portfolio-item .portfolio-item-caption:hover{opacity:1}
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content{font-size:1.5rem}
 
-@media (min-width:576px){.portfolio{margin-bottom:-30px}.portfolio .portfolio-item{margin-bottom:30px}}.portfolio-modal .portfolio-modal-dialog{padding:3rem 1rem;min-height:calc(100vh - 2rem);margin:1rem calc(1rem - 8px);position:relative;z-index:2;-moz-box-shadow:0 0 3rem 1rem rgba(0,0,0,.5);-webkit-box-shadow:0 0 3rem 1rem rgba(0,0,0,.5);box-shadow:0 0 3rem 1rem rgba(0,0,0,.5)}.portfolio-modal .portfolio-modal-dialog .close-button{position:absolute;top:2rem;right:2rem}.portfolio-modal .portfolio-modal-dialog .close-button i{line-height:38px}.portfolio-modal .portfolio-modal-dialog h2{font-size:2rem}@media (min-width:768px){.portfolio-modal .portfolio-modal-dialog{min-height:100vh;padding:5rem;margin:3rem calc(3rem - 8px)}.portfolio-modal .portfolio-modal-dialog h2{font-size:3rem}}.bg-primary{background-color:#bd5d38!important}.text-primary{color:#bd5d38!important}a{color:#bd5d38}a:active,a:focus,a:hover{color:#824027}
+@media (min-width:576px){.portfolio{margin-bottom:-30px}.portfolio .portfolio-item{margin-bottom:30px}}.portfolio-modal .portfolio-modal-dialog{padding:3rem 1rem;min-height:calc(100vh - 2rem);margin:1rem calc(1rem - 8px);position:relative;z-index:2;-moz-box-shadow:0 0 3rem 1rem rgba(0,0,0,.5);-webkit-box-shadow:0 0 3rem 1rem rgba(0,0,0,.5);box-shadow:0 0 3rem 1rem rgba(0,0,0,.5)}.portfolio-modal .portfolio-modal-dialog .close-button{position:absolute;top:2rem;right:2rem}.portfolio-modal .portfolio-modal-dialog .close-button i{line-height:38px}.portfolio-modal .portfolio-modal-dialog h2{font-size:2rem}@media (min-width:768px){.portfolio-modal .portfolio-modal-dialog{min-height:100vh;padding:5rem;margin:3rem calc(3rem - 8px)}.portfolio-modal .portfolio-modal-dialog h2{font-size:3rem}}.bg-primary{background-color:#bd5d38!important}
+.text-primary{color:#36bad1!important;}
+.text-secondary{ text-transform: none; color: white!important}
+.start{ color: white!important}
+a{color:#62abff}
+a:active,a:focus,a:hover{color:#1258a8}
 
 .footer {
-      
       text-align: center;
       padding-bottom: 2rem!important;
       padding-top: 2rem!important;
       font-size: 2rem;
   }
+
+.fullheight {
+    height: 100vh;
+}
+
+.aboutp{
+    width: 75%;
+    font-size: 1.1rem;
+}
+
+.bg-image {
+    /*background: url("../img/developer.jpg");*/
+    background: url("../img/superhacker.jpg");
+    opacity: 0.8;
+      position: absolute;
+      top: 0;
+      left: 0;width: 100%;height: 100%;background-position: center center;background-size: cover;background-repeat: no-repeat;z-index: 0;}
+
+.content .start{
+    position: relative;
+}
+.role{ text-transform: none!important; color: white!important; font-size: 3rem;font-family:'Saira Extra Condensed'}
+.start{
+    top:10%;
+}
