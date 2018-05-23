@@ -281,7 +281,7 @@
 .swift-icon:before        { font-family: Devicons; font-size: 16px; top: 3px; content: "\e655"; left: -1px; }
 .travis-icon:before       { font-family: Devicons; font-size: 16px; top: 3px; content: "\e67e"; font-size: 15px; top: 2px; }
 .uikit-icon:before        { font-family: Devicons; font-size: 16px; top: 3px; content: "\e673"; font-size: 15px; top: 2px; }
-.unity3d-icon:before      { font-family: Devicons; font-style: normal; content: "\e621"; }
+.unity3d-icon:before      { font-family: Devicons; top: 20px; font-style: normal; content: "\e621"; }
 .vim-icon:before          { font-family: Devicons; font-size: 16px; top: 3px; content: "\e6c5"; }
 .vs-icon:before           { font-family: Devicons; font-size: 16px; top: 3px; content: "\e60c"; font-size: 14px; top: 2px; }
 .windows-icon:before      { font-family: Devicons; font-size: 16px; top: 3px; content: "\e60f"; font-size: 14px; top: 2px; }
@@ -617,7 +617,7 @@
 .typedoc-icon:before       { font-family: file-icons; font-size: 15px; content: "\e9fe"; top: 2px; }
 .typings-icon:before       { font-family: file-icons; font-size: 15px; content: "\e9df"; top: 2px; }
 .uno-icon:before           { font-family: file-icons; font-size: 15px; content: "\e9b3"; top: 2px; }
-.unreal-icon:before        { font-family: file-icons; font-style: normal; content: "u";     top: 2px; }
+.unreal-icon:before        { font-family: file-icons; font-size: 3rem; font-style: normal; content: "u";     top: 2px; }
 .urweb-icon:before         { font-family: file-icons; font-size: 15px; content: "\e9ba"; top: 4px; font-size: 18px; left: -1px; text-shadow: 0 0 0; }
 .webpack-icon:before       { font-family: file-icons; font-size: 15px; content: "\e91e"; top: 3px; }
 .wercker-icon:before       { font-family: file-icons; font-size: 15px; content: "\ea19"; top: 2px; }

@@ -5,7 +5,7 @@ h1{font-size:6rem;line-height:5.5rem}
 h2{font-size:3.5rem}
 .subheading{text-transform:uppercase;font-weight:500;font-family:'Saira Extra Condensed',serif;font-size:1.35rem}
 .list-social-icons a{color:#495057}
-.list-social-icons a:hover{color:#bd5d38}
+.list-social-icons a:hover{color:#1d4b70}
 .list-social-icons a .fa-lg{font-size:1.75rem}
 .socialIcons{ 
     display: flex;
@@ -13,7 +13,7 @@ h2{font-size:3.5rem}
     margin-top: 30px;
 }
 .list-icons{font-size:3rem}
-.list-icons .list-inline-item i:hover{color:#bd5d38}
+.list-icons .list-inline-item i:hover{color:#36bad1}
  #sideNav .navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase}
 
 @media (min-width:992px){
@@ -23,27 +23,43 @@ h2{font-size:3.5rem}
         #sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
         #sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:100%}
         #sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
-        #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}}
+        #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}
+    }
 
-section.resume-section{border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important; }
+section.resume-section{border-bottom:1px solid #dee2e6;padding-top:3rem!important;padding-bottom:3rem!important; }
 section.resume-section .resume-item .resume-date{min-width:none}
         
 @media (min-width:768px){
     
-    section.resume-section{min-height:35vh; position: relative;}
+    section.resume-section{ position: relative;}
     
-    section.resume-section .resume-item .resume-date{min-width:18rem; position: relative;}}
+    section.resume-section .resume-item .resume-date{min-width:20rem; font-size: 1.2rem; position: relative;}}
     
 @media (min-width:992px){
-    section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important; position: relative;}}
-    
+    section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important; position: relative;}
+}
+
+@media (min-width:1440px){
+    section.resume-section .resume-item .resume-date{min-width:24rem; font-size: 1.5rem; position: relative;}
+}
+
 .portfolio{margin-bottom:-15px}
 .portfolio .portfolio-item{position:relative;display:block;max-width:25rem;margin-bottom:15px}
 .portfolio .portfolio-item .portfolio-item-caption{-webkit-transition:all ease .5s;-moz-transition:all ease .5s;transition:all ease .5s;opacity:0;background-color:rgba(24,188,156,.9)}
 .portfolio .portfolio-item .portfolio-item-caption:hover{opacity:1}
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content{font-size:1.5rem}
 
-@media (min-width:576px){.portfolio{margin-bottom:-30px}.portfolio .portfolio-item{margin-bottom:30px}}
+@media (min-width:576px){
+    .portfolio{margin-bottom:-30px}
+    .portfolio .portfolio-item{margin-bottom:30px}
+    .aboutp{ font-size: 0.9rem;}
+ 
+}
+
+@media (max-width:768px){
+    section.resume-section.fullheight{ height: 93vh;}
+}
+
 .portfolio-modal .portfolio-modal-dialog{padding:3rem 1rem;min-height:calc(100vh - 2rem);margin:1rem calc(1rem - 8px);position:relative;z-index:2;-moz-box-shadow:0 0 3rem 1rem rgba(0,0,0,.5);-webkit-box-shadow:0 0 3rem 1rem rgba(0,0,0,.5);box-shadow:0 0 3rem 1rem rgba(0,0,0,.5)}
 .portfolio-modal .portfolio-modal-dialog .close-button{position:absolute;top:2rem;right:2rem}
 .portfolio-modal .portfolio-modal-dialog .close-button i{line-height:38px}
@@ -78,8 +94,13 @@ ul {
 }
 
 .aboutp{
-    width: 75%;
-    font-size: 1.1rem;
+    margin-right: calc( 10px + 0.5vw );
+    font-size: calc( 10px + 0.5vw );
+    position: relative;
+}
+
+.empty{
+    margin-bottom: 10%;
 }
 
 .bg-image {
@@ -119,4 +140,40 @@ ul {
 
 .tooltipo:hover .tooltipotext {
     visibility: visible;
+}
+
+.tooltip{ 
+    position:relative;
+    float:right;
+  }
+
+  .tooltip{ 
+    position:relative;
+    float:right;
+  }
+  
+  .tooltip > .tooltip-inner {background-color: #0f0f0f00; padding:5px 15px; color:rgb(38, 176, 255); font-weight:bold; font-size:15px; }
+  .tooltip > .arrow {visibility: hidden; }
+
+.progress{
+   border-radius:0;
+   overflow: visible;
+   width: 24rem;
+   border-radius: 15px;
+   height: 24px;
+   -webkit-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+}
+.progress-bar{
+    background:rgb(23,44,60); 
+    -webkit-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+    border-radius: 15px;
+    
+}
+
+.progressText{
+    font-size: 1.3rem;
+    padding-right: 10px;
+    vertical-align: 40%;
 }
