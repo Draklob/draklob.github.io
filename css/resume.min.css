@@ -158,14 +158,15 @@ ul {
 .progress{
    border-radius:0;
    overflow: visible;
-   width: 24rem;
+   width: 80%;
    border-radius: 15px;
    height: 24px;
    -webkit-transition: width 1.5s ease-in-out;
     transition: width 1.5s ease-in-out;
+    font-size: 1rem;
 }
 .progress-bar{
-    background:rgb(23,44,60); 
+    background:#36bad1; 
     -webkit-transition: width 1.5s ease-in-out;
     transition: width 1.5s ease-in-out;
     border-radius: 15px;
@@ -176,4 +177,15 @@ ul {
     font-size: 1.3rem;
     padding-right: 10px;
     vertical-align: 40%;
+}
+
+.iconProgress{
+    float: left;
+    width: 50%;
+}
+
+.iconProgress::after {
+    content: "";
+    display: table;
+    clear: both;
 }

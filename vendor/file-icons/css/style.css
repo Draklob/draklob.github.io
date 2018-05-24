@@ -214,8 +214,8 @@
 .apache-icon:before       { font-family: Mfizz; font-size: 14px; content: "\f102"; top: 3px; font-size: 15px; }
 .archlinux-icon:before    { font-family: Mfizz; font-size: 14px; content: "A";     top: 1px; font-size: 15px; }
 .c-icon:before            { font-family: Mfizz; font-size: 14px; content: "\f106"; top: 1px; font-size: 13px; }
-.cpp-icon:before          { font-family: Mfizz; font-style: normal; content: "\f10b"; }
-.csharp-icon:before       { font-family: Mfizz; font-style: normal; content: "\f10c"; }
+.cpp-icon:before          { font-family: Mfizz; font-size: 3rem; font-style: normal; content: "\f10b"; }
+.csharp-icon:before       { font-family: Mfizz; font-size: 3rem; font-style: normal; content: "\f10c"; }
 .debian-icon:before       { font-family: Mfizz; font-size: 14px; content: "\f111"; top: 1px; }
 .elixir-icon:before       { font-family: Mfizz; font-size: 14px; content: "\f113"; top: 1px; }
 .gnome-icon:before        { font-family: Mfizz; font-size: 14px; content: "\f119"; top: 1px; }
@@ -281,7 +281,7 @@
 .swift-icon:before        { font-family: Devicons; font-size: 16px; top: 3px; content: "\e655"; left: -1px; }
 .travis-icon:before       { font-family: Devicons; font-size: 16px; top: 3px; content: "\e67e"; font-size: 15px; top: 2px; }
 .uikit-icon:before        { font-family: Devicons; font-size: 16px; top: 3px; content: "\e673"; font-size: 15px; top: 2px; }
-.unity3d-icon:before      { font-family: Devicons; top: 20px; font-style: normal; content: "\e621"; }
+.unity3d-icon:before      { font-family: Devicons; font-size: 3rem; font-style: normal; content: "\e621"; }
 .vim-icon:before          { font-family: Devicons; font-size: 16px; top: 3px; content: "\e6c5"; }
 .vs-icon:before           { font-family: Devicons; font-size: 16px; top: 3px; content: "\e60c"; font-size: 14px; top: 2px; }
 .windows-icon:before      { font-family: Devicons; font-size: 16px; top: 3px; content: "\e60f"; font-size: 14px; top: 2px; }
